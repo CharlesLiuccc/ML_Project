@@ -1,0 +1,7 @@
+The data preprocess part
+
+data source: https://zenodo.org/record/3371780#.YmVt5trMKUk
+
+In this part, .wav files will be transferred and modified into image type using Constant-Q Transfer by librosa package
+also the corresponding labels in .jam file will be modified and saved with data from .wav file into .npz file
+

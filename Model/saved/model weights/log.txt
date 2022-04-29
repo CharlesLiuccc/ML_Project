@@ -1,0 +1,34 @@
+
+batch_size: 128
+epochs: 5
+data_path: ../Data/CQT/
+id_file: id.csv
+con_win_size: 9
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 190, 7, 32)        320       
+                                                                 
+ conv2d_1 (Conv2D)           (None, 188, 5, 64)        18496     
+                                                                 
+ conv2d_2 (Conv2D)           (None, 186, 3, 64)        36928     
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 93, 1, 64)        0         
+ )                                                               
+                                                                 
+ dropout (Dropout)           (None, 93, 1, 64)         0         
+                                                                 
+ flatten (Flatten)           (None, 5952)              0         
+                                                                 
+ dense (Dense)               (None, 126)               750078    
+                                                                 
+ reshape (Reshape)           (None, 6, 21)             0         
+                                                                 
+ activation (Activation)     (None, 6, 21)             0         
+                                                                 
+=================================================================
+Total params: 805,822
+Trainable params: 805,822
+Non-trainable params: 0
+_________________________________________________________________
