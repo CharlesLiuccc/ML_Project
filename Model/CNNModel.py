@@ -129,6 +129,7 @@ class CNNModel:
         model.add(Activation(self.softmax_by_string))
 
         model.compile(loss=self.catcross_by_string,
+                      optimizer=keras.optimizers.Adadelta(),
                       metrics=[self.avg_acc])
 
         self.model = model

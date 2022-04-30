@@ -66,12 +66,8 @@ the whole project are divided into 2 parts: Data and Model
 
         to test and evaluate the cnn model trained in CNNModel.py and save the results
 
-
-
 ## Run the Project
 
-    you can just run the main function in Evaluation.py to test and evaluate the model have been built in saved/2022-04-26 23'37'01
+    you can just run the main function in Evaluation.py to test and evaluate the model have been built in saved/model weights/0/weights.h5
 
     or you can change the parameters in DataPreprocess.py and run the main function in it to generate your guitar training data. And then change the parameters in CNNModel and run its main function to generate your cnn model and get the evaluation result.
-
-

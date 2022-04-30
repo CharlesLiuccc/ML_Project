@@ -9,7 +9,7 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    model_path = "saved/2022-04-26 23'37'01/0/weights.h5"
+    model_path = "saved/model weights/0/weights.h5"
 
     print("\nmodel building...")
     model = CNNModel()
